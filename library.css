@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+
+body {
+  font-family: 'B612', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading{
+  font-size: 4em;
+  font-weight: 900;
+}
+
+#heading{
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#myModal {
+            position: fixed;
+            top: 80%;
+            left: 50%;
+            width: 45vw;
+            transform: translate(-50%, -50%);
+            transition: opacity 5s ease, transform 0.3s ease;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow-y: hidden;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+input[type='search'] {
+  margin: 1em;
+}
+
+
+#appContainer{
+  display: flex;
+  flex-wrap: wrap;
+  height: 50px;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+}
+
+#card {
+    height: 200px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #ffffff, #e0e0e0);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.card p {
+    margin: 10px 0;
+}
+
+input[type="search"],
+input[type="number"],
+input[type="submit"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#inputspan{
+  display: flex;
+  gap: 1em;
+  font-size: .6em;
+  justify-content: baseline;
+  align-items: center;
+}
+
+input[type='radio']{
+  width:1em;
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin: 1.5em;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#close {
+  font-size: 2em;
+  cursor: pointer;
+  position: relative;
+  bottom:2.5em;
+  left: 8em;
+}
+#close:hover{
+  color: gray;
+}
+
+.delete-btn, .toggle-read{
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 1em;
+    margin-left: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Media query for mobile devices */
+
+@media only screen and (max-width: 600px) {
+  
+  body{
+    overflow-x: hidden;
+  }
+  
+   #main {
+        display:flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #heading {
+        position: fixed;
+        font-size: 1.5em;
+        text-align: center;
+        top: .3em;
+    }
+  
+  .main-heading{
+    margin-top: 2em;
+    position: fixed;
+    font-size: 2em;
+  }
+
+    #myModal {
+        width: 90%; 
+        max-width: 300px; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #form {
+        padding: 10px;
+    }
+
+    #inputspan {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+        font-size: .6em;
+        justify-content: baseline;
+        align-items: center;
+    }
+
+    .btn-span {
+        text-align: left;
+        margin-top: 10px;
+    }
+  
+  #close {
+  font-size: 1.5em;
+  cursor: pointer;
+  position: relative;
+  bottom:4em;
+  left: 5.5em;
+}
+}
+
+
