@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+  <body>
+  <div id='main'>
+    <h1 class='main-heading'>Library</h1>
+    <button id='heading'>+</button>
+  </div>
+  <dialog id='myModal'>
+    <form id='form'>
+      <h1>Enter Book Here</h1>
+      <i class="fa-solid fa-xmark" id='close' onclick='closeModal()'></i>
+      <input type='search' id='author' placeholder='Enter author name' required/>
+      <input type='search' id='title' placeholder='Enter book title' required />
+      <input type='number' id='pages' placeholder='Enter number of pages' required/>
+      <span id='inputspan'>
+        <p>Did you read the Book ? </p>
+        <label> yes <input type='radio' id='yes'  name='radio' required/></label>
+        <label> no <input type='radio' name='radio' id='no' required/></label>
+      </span>
+      <span class='btn-span'>
+        <input type='submit' id='submit' value='Display Book'/>
+        <input type='submit' id='clear' value='clear'/> 
+      </span>
+    </form>
+  </dialog>
+  <div id = 'appContainer'></div>
+  <script src="https://kit.fontawesome.com/fcf5976527.js" crossorigin="anonymous"></script>
+</body>  
+</html>
